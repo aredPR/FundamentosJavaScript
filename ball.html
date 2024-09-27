@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola Mágica</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div {
+            width: 360px;
+            height: 300px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle, white 45%, black 46%, black 50%, white 51%);
+            position: relative;
+        }
+        div::before, div::after {
+            content: "";
+            position: absolute;
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+        div::before {
+            top: 20%;
+            left: 30%;
+            transform: rotate(30deg);
+        }
+        div::after {
+            top: 50%;
+            left: 65%;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Bola Mágica</h1>
+    </div>
+    
+    <a href="./index.html"><button>Regresar</button></a>
+    <script src="./ball.js"></script>
+</body>
+</html>
