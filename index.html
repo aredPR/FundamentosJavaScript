@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos Javascript</title>
     <style>
-        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+        }
+
+        /* Estilos para el contenedor de los botones */
+        .container {
+            text-align: center;
+        }
+
+        /* Estilos de los botones */
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Adaptación para pantallas pequeñas */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            button {
+                width: 80%;
+                font-size: 14px;
+                padding: 12px 0;
+            }
+        }
     </style>
 </head>
 <body>
